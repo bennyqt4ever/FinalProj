@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;900&display=swap');
+
+<<<<<<< HEAD
+=======
+
+>>>>>>> 2c30ef9 (backend changes)
+@media (-webkit-device-pixel-ratio: 1.0) {
+  :root {
+  zoom: 1.25;
+  }}
+<<<<<<< HEAD
+=======
+
+>>>>>>> 2c30ef9 (backend changes)
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: rgba(33, 37, 41, 0.75);
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+
+ 
