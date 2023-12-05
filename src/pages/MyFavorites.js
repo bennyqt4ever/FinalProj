@@ -41,7 +41,7 @@ const MyFavorites = () => {
   
   return (
     <div className="mt-5 container">
-      {ads.length ? <h3>Favorite Ads</h3> : <h3>No Favorite Skills</h3>}
+      {ads.length ? <h3 className="icon-color-3">Favorite Skills</h3> : <h3 className="icon-color-3">No Favorite Skills</h3>}
       <div className="row">
         {ads.map((ad) => (
           <div key={ad.adId} className="col-sm-6 col-md-3 mb-3">

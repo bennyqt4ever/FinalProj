@@ -1,15 +1,16 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useCallback } from "react";
 import { collection, orderBy, query, getDocs, where } from "firebase/firestore";
 import { db } from "../firebaseConfig";
 import AdCard from "../components/AdCard";
 import Carousel from "../components/CarouselPage";
 import Footers from "../components/Footers";
+import HomeContainer from "../components/HomeContainer";
 
 const Home = () => {
   const [ads, setAds] = useState([]);
   const [filter, setFilter] = useState("");
 
-  const getAds = async () => {
+  const getAds = useCallback(async () => {
     const adsRef = collection(db, "ads");
     let q;
     if (filter !== "") {
@@ -25,18 +26,19 @@ const Home = () => {
     let ads = [];
     adDocs.forEach((doc) => ads.push({ ...doc.data() }));
     setAds(ads);
-  };
+  }, [filter]);
 
   useEffect(() => {
     getAds();
-  }, [filter]);
+  }, [getAds]);
 
   return (
     <div>
       <Carousel />
+      <HomeContainer />
       <div className="mt-5 container">
-        <div className="d-flex justify-content-center justify-content-md-between align-items-center flex-wrap mb-5 form">
-          <div>
+        <div className="d-flex align-center mb-3">
+          <div className="">
             <h5>Filter By Category</h5>
             <select
               className="form-select"
@@ -53,7 +55,7 @@ const Home = () => {
             </select>
           </div>
         </div>
-        <h3>Recent Posts</h3>
+        <h3 className="icon-color-3">Recent Posts</h3>
         <div className="row">
           {ads.map((ad) => (
             <div className="col-sm-6 col-md-4 col-xl-3 mb-3" key={ad.adId}>

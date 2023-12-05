@@ -1,30 +1,27 @@
-import React from "react";
-import { Link } from "react-router-dom";
-import { AiOutlineHeart, AiFillHeart } from "react-icons/ai";
-import Moment from "react-moment";
-import { auth } from "../firebaseConfig";
-import useSnapshot from "../utils/useSnapshot";
-import { toggleFavorite } from "../utils/fav";
-import Sold from "../components/Sold";
-import 'animate.css';
-import TrackVisibility from 'react-on-screen';
+  import React from "react";
+  import { Link } from "react-router-dom";
+  import { AiOutlineHeart, AiFillHeart } from "react-icons/ai";
+  import Moment from "react-moment";
+  import { auth } from "../firebaseConfig";
+  import useSnapshot from "../utils/useSnapshot";
+  import { toggleFavorite } from "../utils/fav";
+  import Sold from "../components/Sold";
 
-const AdCard = ({ ad }) => {
-  const { val } = useSnapshot("favorites", ad.adId);
+  const AdCard = ({ ad }) => {
+    const { val } = useSnapshot("favorites", ad.adId);
 
-  const adLink = `/${ad.category.toLowerCase()}/${ad.adId}`;
+    const adLink = `/${ad.category.toLowerCase()}/${ad.adId}`;
 
-  return (
-    <TrackVisibility>
-      {({ isVisible }) =>
-      <div className={ isVisible? "card position-relative animate__animated animate__slideInUp " : "animate__animated animate__fadeOut"} >
+    return (
+      
+      <div className="card position-relative item-hover ad-card" style={{ overflow: 'hidden', maxWidth: '400px', margin: '0 auto' }}>
         {ad.isSold && <Sold />}
         <Link to={adLink}>
           <img
             src={ad.images[0].url}
             alt={ad.title}
             className="card-img-top"
-            style={{ width: "100%", height: "200px" }}
+            style={{ width: "100%", height: "200px", transition: "transform 0.3s" }}
           />
         </Link>
         <div className="card-body">
@@ -55,9 +52,8 @@ const AdCard = ({ ad }) => {
             </p>
           </Link>
         </div>
-      </div>}
-    </TrackVisibility>
-  );
-};
+      </div>
+    );
+  };
 
-export default AdCard;
+  export default AdCard;

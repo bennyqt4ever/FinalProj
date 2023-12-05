@@ -175,7 +175,7 @@ const Sell = () => {
             />
           </div>
           <h3 className="text-center mb-3 icon-color-3">InterList</h3>
-          <p className="text-center mb-3 icon-color"> Add a Skill you want to Share</p>
+          <p className="text-center mb-3 icon-color"> Create a Skill you want to Share</p>
           <div className="mb-3 text-center">
             <label htmlFor="image">
               <div className="btn btn-secondary btn-sm">
@@ -297,7 +297,7 @@ const Sell = () => {
           )}
 
           <div className="mb-3 text-center">
-            <button className="btn btn-secondary btn-sm w-100" disabled={loading}>
+            <button className="btn btn-secondary btn-sm w-50" disabled={loading}>
               Create
             </button>
           </div>

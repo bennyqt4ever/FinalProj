@@ -3,7 +3,7 @@ import { auth, db } from "../../firebaseConfig";
 import { signInWithEmailAndPassword } from "firebase/auth";
 import { doc, updateDoc } from "firebase/firestore";
 import { useNavigate, Link } from "react-router-dom";
-import { Button, InputGroup, Container, Col, Alert } from 'react-bootstrap';
+import { Button, InputGroup, Container, Col} from 'react-bootstrap';
 import { FaEye, FaEyeSlash } from "react-icons/fa";
 
 const handleFirebaseError = (errorCode) => {
@@ -82,6 +82,7 @@ const Login = () => {
               Email
             </label>
             <input
+              style={{ borderRadius: '10px' }}
               type="email"
               className="form-control"
               name="email"
@@ -93,7 +94,7 @@ const Login = () => {
             <label htmlFor="password" className="form-label icon-color-3">
               Password
             </label>
-            <InputGroup>
+            <InputGroup style={{ borderRadius: '10px' }}>
               <input
                 type={showPassword ? "text" : "password"}
                 className="form-control"
@@ -110,6 +111,7 @@ const Login = () => {
           {error && <p className="text-danger text-center">{error}</p>}
           <div className="text-center mb-3">
             <button
+              style={{ borderRadius: '25px' }}
               className="btn btn-secondary btn-sm w-100"
               disabled={loading}>
               LOGIN

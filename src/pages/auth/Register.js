@@ -106,6 +106,7 @@ const Register = () => {
                 Name
               </label>
               <input
+                style={{ borderRadius: '10px' }}
                 type="text"
                 className="form-control"
                 name="name"
@@ -118,6 +119,7 @@ const Register = () => {
                 Email
               </label>
               <input
+                style={{ borderRadius: '10px' }}
                 type="email"
                 className="form-control"
                 name="email"
@@ -130,6 +132,7 @@ const Register = () => {
                 Password
               </label>
               <input
+                style={{ borderRadius: '10px' }}
                 type="password"
                 className="form-control"
                 name="password"
@@ -142,6 +145,7 @@ const Register = () => {
                 Confirm Password
               </label>
               <input
+                style={{ borderRadius: '10px' }}
                 type="password"
                 className="form-control"
                 name="confirmPassword"
@@ -151,7 +155,7 @@ const Register = () => {
             </div>
             {error ? <p className="text-center text-danger">{error}</p> : null}
             <div className="text-center mb-1">
-              <button className="btn btn-secondary btn-sm mb-1 w-100" disabled={loading}>
+              <button className="btn btn-secondary btn-sm mb-1 w-100" style={{ borderRadius: '25px' }} disabled={loading}>
                 REGISTER
               </button>
             </div>
