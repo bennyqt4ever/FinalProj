@@ -50,7 +50,7 @@ const ForgotPassword = () => {
               ) : (
                 <>
                   <div className="mb-3">
-                    <label htmlFor="email" className="form-label icon-color-3">
+                    <label htmlFor="email"  style={{ borderRadius: '10px' }} className="form-label icon-color-3">
                       Email
                     </label>
                     <input
@@ -63,7 +63,7 @@ const ForgotPassword = () => {
                   </div>
                   {error ? <p className="text-center text-danger">{error}</p> : null}
                   <div className="text-center mb-3">
-                    <button className="btn btn-secondary btn-sm w-100">Send</button>
+                    <button style={{ borderRadius: '25px' }} className="btn btn-secondary btn-sm w-50">Send</button>
                   </div>
                 </>
               )}

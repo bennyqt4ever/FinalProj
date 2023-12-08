@@ -112,7 +112,7 @@ const Login = () => {
           <div className="text-center mb-3">
             <button
               style={{ borderRadius: '25px' }}
-              className="btn btn-secondary btn-sm w-100"
+              className="btn btn-secondary btn-sm w-50"
               disabled={loading}>
               LOGIN
             </button>

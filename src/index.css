@@ -1,6 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;900&display=swap');
 
 
+/*remove visible scroll bars*/
+*{
+  -ms-overflow-style: none;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+/*end*/
+
+
+/*fix the zoom level to 100%*/
 @media (-webkit-device-pixel-ratio: 1.0) {
   :root {
   zoom: 1.25;
@@ -14,6 +25,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: rgba(33, 37, 41, 0.75);
+  
 }
 
 code {

@@ -155,7 +155,7 @@ const Register = () => {
             </div>
             {error ? <p className="text-center text-danger">{error}</p> : null}
             <div className="text-center mb-1">
-              <button className="btn btn-secondary btn-sm mb-1 w-100" style={{ borderRadius: '25px' }} disabled={loading}>
+              <button className="btn btn-secondary btn-sm mb-1 w-50" style={{ borderRadius: '25px' }} disabled={loading}>
                 REGISTER
               </button>
             </div>

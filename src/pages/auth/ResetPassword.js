@@ -9,7 +9,7 @@ const ResetPassword = () => {
   const [error, setError] = useState("");
   const [success, setSuccess] = useState(false);
 
-  let [searchParams, setSearchParams] = useSearchParams();
+  let [searchParams] = useSearchParams();
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -59,7 +59,7 @@ const ResetPassword = () => {
                 ) : (
                   <>
                     <div className="mb-3">
-                      <label htmlFor="password" className="form-label icon-color-3">
+                      <label htmlFor="password" style={{ borderRadius: '10px' }} className="form-label icon-color-3">
                         Password
                       </label>
                       <input
@@ -70,7 +70,7 @@ const ResetPassword = () => {
                       />
                     </div>
                     <div className="mb-3">
-                      <label htmlFor="confirmPassword" className="form-label icon-color-3">
+                      <label htmlFor="confirmPassword" style={{ borderRadius: '10px' }} className="form-label icon-color-3">
                         Confirm Password
                       </label>
                       <input
@@ -82,7 +82,7 @@ const ResetPassword = () => {
                     </div>
                     {error ? <p className="text-center text-danger">{error}</p> : null}
                     <div className="text-center mb-3">
-                      <button className="btn btn-secondary btn-sm w-100">Reset</button>
+                      <button className="btn btn-secondary btn-sm w-50" style={{ borderRadius: '25px' }}>Reset</button>
                     </div>
                   </>
                 )}

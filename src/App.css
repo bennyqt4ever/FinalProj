@@ -340,12 +340,14 @@ white-space: nowrap;
 }
 
 .ad-card {
-  max-width: 400px; /* Adjust the maximum width based on your design */
+  max-width: 400px; 
   margin: 0 auto;
 }
 
 @media (max-width: 767px) {
   .ad-card {
-    max-width: calc(50% - 20px); /* 50% width with some margin/gap between cards */
+    max-width: calc(50% - 20px); 
   }
 }
+
+
