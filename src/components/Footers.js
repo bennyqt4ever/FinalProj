@@ -2,21 +2,19 @@ import React from 'react'
 import {
     MDBFooter,
     MDBContainer,
-    MDBCol,
-    MDBRow,
     MDBIcon,
     MDBBtn
   } from 'mdb-react-ui-kit';
 
-  import { Link, useNavigate } from "react-router-dom";
+  import { Link } from "react-router-dom";
 
 const Footers = () => {
   return (
     <MDBFooter className='bg-light text-center text-dark pt-4 mt-5'>
       <Link>
           <img 
-          src= "./images/nav-icon.png"
-          alt = "logo-text-icon"
+          src= "./images/Nav-icon-text.png"
+          alt = "icon-text"
           width= "auto"
           height="40px"
           className="d-inline-block alaign-center"
