@@ -27,7 +27,7 @@ const Navbar = () => {
       <div className="container">
         <Link className="navbar-brand" to="/">
           <img
-            src="./images/nav-icon.png"
+            src="./images/Nav-icon-text.png"
             alt="logo-text-icon"
             width="auto"
             height="40px"
