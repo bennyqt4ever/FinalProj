@@ -1,6 +1,6 @@
 # Intersect: Where Skills Meet and Exchange
 Members:\
-Lodangco, Benedict\ 
+Lodangco, Benedict\
 Medrano, John Paul\
 Balingit, Joem\
 Lopez, Alfred Miguel
