@@ -1,9 +1,9 @@
 # Intersect: Where Skills Meet and Exchange
 Members:
 Lodangco, Benedict\ 
-Medrano, John Paul\
+Medrano, John Paul
 Balingit, Joem\
-Lopez, Alfred Miguel\
+Lopez, Alfred Miguel
 
 # Getting Started with Create React App
 
