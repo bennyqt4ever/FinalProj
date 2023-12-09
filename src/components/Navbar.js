@@ -6,7 +6,7 @@ import { FaUserAlt } from "react-icons/fa";
 import { Link, NavLink, useNavigate } from "react-router-dom";
 import { AuthContext } from "../context/auth";
 import { auth, db } from "../firebaseConfig";
-
+import logo from "../Images/Nav-icon-text.png";
 const Navbar = () => {
   const { user, unread } = useContext(AuthContext);
   const navigate = useNavigate();
@@ -27,7 +27,7 @@ const Navbar = () => {
       <div className="container">
         <Link className="navbar-brand" to="/">
           <img
-            src="./images/Nav-icon-text.png"
+            src={logo}
             alt="logo-text-icon"
             width="auto"
             height="40px"

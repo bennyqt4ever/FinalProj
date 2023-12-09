@@ -6,14 +6,15 @@ import {
     MDBBtn
   } from 'mdb-react-ui-kit';
 
-  import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
+import logo from "../Images/Nav-icon-text.png";
 
 const Footers = () => {
   return (
     <MDBFooter className='bg-light text-center text-dark pt-4 mt-5'>
       <Link>
           <img 
-          src= "./images/Nav-icon-text.png"
+          src= {logo}
           alt = "icon-text"
           width= "auto"
           height="40px"
